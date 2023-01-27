@@ -5,16 +5,20 @@
 
 The scope of this project is to scout the ways to find out dangling resources within the AWS account and print all these resources for housekeeping purposes
 
+## Prequisites
+
+boto3 module
+$ pip install boto3
+
 ## Add your resources
 
-from dangling_resources.py I call (import) to others .py, the idea is making it modular and add more resources to find out
-
-resources included so far:
+Resources included so far:
 
     - Unattached EBS volumes
-    - ELB without attached instances 
-    - ....
-    - 
+    - ELB without attached instances - wip
+    - Security Groups - wip
+    - EIPs
+    - ENIs
 
 ## Example report
 
